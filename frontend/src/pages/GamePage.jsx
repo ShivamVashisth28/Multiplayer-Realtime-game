@@ -118,11 +118,11 @@ function GamePage() {
 
         if(index>=0){
             if(balls[index].color === userStored.color){
-                setScore((prev)=>prev+2)
-                console.log('hit')
+                setScore((prev)=>prev+5)
+               
             }else{
-                setScore((prev)=>prev-1)
-                console.log('wrong')
+                setScore((prev)=>prev+1)
+                
             }
             const data = {
                 name : userStored.userId,
