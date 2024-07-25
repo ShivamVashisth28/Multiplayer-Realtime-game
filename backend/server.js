@@ -16,7 +16,7 @@ const io = new Server(server, {
 const userSocketMap = {}; // userId : socketId
 let users = []; // { name, pos, color }
 let balls = [];
-const userScores = [] // {userId , score}
+let userScores = [] // {userId , score}
 
 const ballGenerate = () => {
     balls = [];
