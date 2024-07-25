@@ -78,6 +78,7 @@ io.on('connection', (socket) => {
         if(balls.length === 0){
             io.emit('game-over',true)
             userScores = []
+            users = []
             ballGenerate()
         }
         io.emit('ball-details',balls)
